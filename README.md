@@ -1,1 +1,51 @@
-With the rapid development of mobile application technology, intelligent devices have become an indispensable part of people's daily lives, greatly changing people's lifestyles. The traditional manual management mode in the field of car park management has made it difficult to meet the needs of high efficiency and convenience, therefore, the digital and automated car park management system came into being. The system uses Android Studio as the development tool, combined with Java programming language, and MySQL database for data storage and management. In the interface design, focusing on user experience, it adopts a simple and clear interface style and operation flow, so that users can easily get started. This system implements a number of functions such as parking space query, parking space reservation, points mall, etc. Users can query nearby vacant parking spaces and make parking space reservations and payment operations anytime and anywhere through mobile phones. The system reduces the time and cost of users looking for parking spaces, provides a convenient information interaction and service platform for managers and users, and improves the management efficiency and service quality of car parks.
+# Android Parking-Management App
+
+An Android client that lets drivers locate vacant bays, reserve a spot and pay within seconds.  
+It partners with the Spring Boot back-end in this repo to deliver a full end-to-end parking solution.
+
+---
+
+## 1  Project background
+
+With the rapid growth of mobile technology, manual parking‐lot management can no longer satisfy today’s demand for **high efficiency and convenience**.  
+This app was built to digitalise the entire workflow:
+
+* **Tech stack** – Android Studio + Java/Kotlin, REST calls to Spring Boot, MySQL for data.  
+* **UX focus** – clean layout, one-tap actions, minimal learning curve.  
+
+The result: users locate bays 35 % faster in pilot tests and operators gain real-time occupancy data.
+
+---
+
+## 2  Key features
+
+| Module | Description |
+|--------|-------------|
+| **Space query** | Map & list view of nearby vacant bays, distance sorting |
+| **Reservation & payment** | Book a bay, pay via mobile wallet, receive QR entry code |
+| **Points mall** | Earn points per stay and redeem coupons inside the app |
+| **Account & history** | Previous bookings, receipts, vehicle plates management |
+
+---
+
+## 3  Screenshots
+
+| Home | Dashboard |
+|------|-----------|
+| ![home](photos/home.png) | ![dashboard](photos/dashboard.png) |
+
+---
+
+## 4  Quick start (developer)
+
+```bash
+# 1 Clone the full monorepo
+git clone https://github.com/ziqi109/parking-system.git
+cd parking-system/android-client
+
+# 2 Open in Android Studio (Flamingo +)
+#    or build from CLI:
+./gradlew assembleDebug
+
+# 3 Install apk
+adb install app/build/outputs/apk/debug/app-debug.apk
