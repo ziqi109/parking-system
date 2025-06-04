@@ -32,7 +32,7 @@ The result: users locate bays 35 % faster in pilot tests and operators gain real
 
 | Home | Dashboard |
 |------|-----------|
-| ![home](photos/home.png) | ![dashboard](photos/dashboard.png) |
+| ![home](android-client/photos/home.png) | ![dashboard](android-client/photos/dashboard.png) |
 
 ---
 
