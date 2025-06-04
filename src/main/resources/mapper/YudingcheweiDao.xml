@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.dao.YudingcheweiDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.entity.YudingcheweiEntity" id="yudingcheweiMap">
+        <result property="cheweibianhao" column="cheweibianhao"/>
+        <result property="cheweimingcheng" column="cheweimingcheng"/>
+        <result property="cheweileixing" column="cheweileixing"/>
+        <result property="cheweitupian" column="cheweitupian"/>
+        <result property="cheweiweizhi" column="cheweiweizhi"/>
+        <result property="shoufeibiaozhun" column="shoufeibiaozhun"/>
+        <result property="tingchejiage" column="tingchejiage"/>
+        <result property="yudingzhuangtai" column="yudingzhuangtai"/>
+        <result property="zhanghao" column="zhanghao"/>
+        <result property="xingming" column="xingming"/>
+        <result property="shouji" column="shouji"/>
+        <result property="chepaihaoma" column="chepaihaoma"/>
+        <result property="yudingshijian" column="yudingshijian"/>
+        <result property="zhuangtai" column="zhuangtai"/>
+        <result property="sfsh" column="sfsh"/>
+        <result property="shhf" column="shhf"/>
+        <result property="userid" column="userid"/>
+    </resultMap>
+
+	<select id="selectListVO"
+		resultType="com.entity.vo.YudingcheweiVO" >
+		SELECT * FROM yudingchewei  yudingchewei         
+        <where> 1=1 ${ew.sqlSegment}</where>
+	</select>
+	
+	<select id="selectVO"
+		resultType="com.entity.vo.YudingcheweiVO" >
+		SELECT  yudingchewei.* FROM yudingchewei  yudingchewei 	
+ 		<where> 1=1 ${ew.sqlSegment}</where>
+	</select>
+
+    <select id="selectListView"
+		resultType="com.entity.view.YudingcheweiView" >
+
+		SELECT  yudingchewei.* FROM yudingchewei  yudingchewei 	        
+        <where> 1=1 ${ew.sqlSegment}</where>
+	</select>
+	
+	<select id="selectView"
+		resultType="com.entity.view.YudingcheweiView" >
+		SELECT * FROM yudingchewei  yudingchewei <where> 1=1 ${ew.sqlSegment}</where>
+	</select>
+	
+
+
+</mapper>
